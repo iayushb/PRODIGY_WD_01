@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    color: #333;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #817ff8, #feb47b);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar li {
+    padding: 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#navbar a:hover {
+    color: #ffefba;
+    transform: scale(1.1);
+}
+
+.scrolled {
+    background: linear-gradient(90deg, #654ea3, #eaafc8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scrolled a {
+    color: white;
+}
+
+.content {
+    padding-top: 80px; 
+}
+
+section {
+    height: 100vh; 
+    padding: 50px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:nth-of-type(even) {
+    background: #ffefba;
+}
+
+section:nth-of-type(odd) {
+    background: #ece9e6;
+}
+
+section:hover {
+    background: #f1caab;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
